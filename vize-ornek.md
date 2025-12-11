@@ -121,3 +121,30 @@ Hessian matrisinin determinantına ve köşegen elemanlarına bakalım.
 
 **Sonuç:**
 Determinant pozitif ($4 > 0$) ve $f_{xx}$ pozitif ($2 > 0$) olduğu için, $(2, 3)$ noktası bir **Yerel Minimum** noktasıdır.
+
+---
+
+## Soru 5: Optimizasyon Algoritması Türleri
+
+**Soru:** Optimizasyon algoritması türleri nelerdir? Bu türlerden en az birer örnek veriniz.
+
+**Cevap:**
+Optimizasyon algoritmaları genel olarak çalışma prensiplerine ve arama stratejilerine göre iki ana kategoriye ayrılabilir:
+
+1.  **Kesin (Exact) Algoritmalar:**
+    Bu algoritmalar, problemin global optimum çözümünü bulmayı garanti ederler. Genellikle küçük ve orta ölçekli problemler için uygundurlar, ancak problem boyutu büyüdükçe hesaplama maliyetleri çok artar.
+    *   **Örnekler:**
+        *   Simpleks Algoritması (Lineer Programlama için)
+        *   Dallan ve Sınır (Branch and Bound)
+        *   Dinamik Programlama
+
+2.  **Sezgisel (Heuristic) ve Meta-Sezgisel (Meta-heuristic) Algoritmalar:**
+    Bu algoritmalar, makul bir süre içinde "yeterince iyi" (optimuma yakın) çözümler bulmayı hedefler. Global optimumu bulma garantileri yoktur ancak büyük ve karmaşık problemlerde (NP-Hard gibi) etkilidirler.
+
+    *   **Sezgisel Algoritmalar:** Genellikle belirli bir probleme özgü kurallar kullanırlar.
+        *   **Örnek:** Açgözlü Yaklaşım (Greedy Approach)
+
+    *   **Meta-Sezgisel Algoritmalar:** Problemden bağımsız genel çerçevelerdir ve genellikle doğadan esinlenirler. Kendi içlerinde de alt gruplara ayrılırlar:
+        *   **Evrimsel Algoritmalar:** Genetik Algoritma (GA), Diferansiyel Gelişim (DE).
+        *   **Sürü Zekası (Swarm Intelligence):** Parçacık Sürü Optimizasyonu (PSO), Karınca Kolonisi Algoritması (ACO), Yapay Arı Kolonisi (ABC).
+        *   **Fizik Tabanlı:** Tavlama Benzetimi (Simulated Annealing), Yerçekimsel Arama Algoritması (GSA).
